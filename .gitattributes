@@ -1,0 +1,9 @@
+* text=auto
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+resources/* linguist-vendored
+database/* linguist-vendored
+public/* linguist-vendored
+routes/* linguist-vendored
+CHANGELOG.md export-ignore
