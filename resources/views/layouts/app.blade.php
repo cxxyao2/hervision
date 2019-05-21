@@ -9,6 +9,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- seo -->
+    <meta name="keyword" content="science,education,culture">
+    <meta name="description" content="a forum about interesting tech tips and books">
+    <meta name="author" content="hervision 2019">
+
+
     <title>{{ config('app.name', 'HerVision') }}</title>
     <link rel="shortcut icon" href="/images/ponytail.ico" />
 
