@@ -19,7 +19,10 @@ Route::get('/','ThreadsController@homepage');
 Route::get('/index', 'PostController@index');
 Route::post('/posts', 'PostController@store');
 
-Route::view('/hello','hello');
+Route::get('/chart', function() {
+    return view('test');
+    //ok return "hello world";
+})->name('chart');;
 
 
 
@@ -32,7 +35,8 @@ Route::resources([
 Route::get('/test1', 'TestArrayController@test1'); //序列化模型 & 集合
 Route::get('/theadResrouce', function () {
     return new ThreadResource(Thread::find(4));
-}); 
+});
+Route::get('/monthoutput/{year}', 'MonthlyOutputController@index'); //chart for month output
 
 
 Route::post('/redis/{funcname}','RedisUserController@getfunc');

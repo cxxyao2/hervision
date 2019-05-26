@@ -14,3 +14,24 @@ Main Functions:
 ---
 Revision
 - Add Email Confirmation 
+#vue
+- npm run watch  . must compileer first.
+:value:  property added by developer
+id : primitive property
+<div v-for="portal in portals">
+  <input type="radio"
+         id="{{portal.id}}"
+         name="portalSelect"
+         v-bind:value="{id: portal.id, name: portal.name}"
+         v-model="newPortalSelect"
+         v-on:change="showSellers"
+         :checked="portal.id == currentPortalId">
+
+  <label for="{{portal.id}}">{{portal.name}}</label>
+</div>
+
+#chart line
+LineChart.js, RandomChart.vue
+#chart line2
+
+

@@ -28,7 +28,7 @@ Vue.component('wysiwyg', require('./components/Wysiwyg.vue').default);
 Vue.component('following-button', require('./components/FollowingButton.vue').default);
 Vue.component('html-display', require('./components/HtmlDisplay.vue').default);
 Vue.component('paginator', require('./components/Paginator.vue').default);
-
+Vue.component('random-chart', require('./components/RandomChart.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

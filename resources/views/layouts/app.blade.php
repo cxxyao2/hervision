@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  after 2 second  ok  -->
+   <!-- <meta http-equiv="refresh" content="2;URL=http://www.google.com"  -->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- seo -->
-    <meta name="keyword" content="science,education,culture">
-    <meta name="description" content="a forum about interesting tech tips and books">
+    <meta name="Keywords" content="science,education,culture">
+    <meta name="Description" content="a forum about interesting tech tips and books">
     <meta name="author" content="hervision 2019">
 
 

@@ -55,7 +55,8 @@
              <span class="badge"> {{  auth()->user()->unreadNotifications()->count() }}</span>
            </a>
            <a class="dropdown-item" href="{{ route('polls.index') }}">{{ __('header.polllist') }}</a>
-        
+           <a class="dropdown-item" href="{{ route('chart') }}">Chart</a>
+
 
            <div class="dropdown-divider"></div>
            @if(Auth::user()->isAdmin())

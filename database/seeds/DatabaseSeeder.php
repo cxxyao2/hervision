@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
          $this->call(ChannelsSeeder::class);
          $this->call(TagsTableSeeder::class);
          $this->call(ThreadsSeeder::class);
+         $this->call(MonthlyOutputTableSeeder::class);
     }
 }

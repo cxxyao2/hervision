@@ -24,6 +24,7 @@ class TestArrayController extends Controller
     //
 
     public function test1(){
+        dd(phpinfo());
        $thread = Thread::with('replies')->find(4);
         // array
         return $thread->makeHidden('title')->toArray();
