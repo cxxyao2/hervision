@@ -17,7 +17,7 @@ class RegistrationController extends Controller
 
     public function store()
     {
-     
+
       //validated
       $this->validate(request(),[
           'name' => 'required|unique:users,name',
@@ -34,16 +34,16 @@ class RegistrationController extends Controller
       //lgoin in
       auth()->login($user);
 
-      //  邮件已经测试成功
+      //  邮件已经测试成功 todo
       // Mail::to($user)->send(new Welcome($user));
       // Mail::to($user)->send(new WelcomeAgain($user));
-       // Mail::to($user)->send(new PleaseConfirmYourEmail($user));
-      
+     Mail::to($user)->send(new PleaseConfirmYourEmail($user));
+
 
       //session & flash messages
       session()->flash('message','谢谢登录!');
 
-     
+
       //redirect
       return redirect('/home');
       //return redirect()->home();
@@ -58,9 +58,9 @@ class RegistrationController extends Controller
             return redirect('/home')
             ->with('flash', 'unknown token');
         }
-      
+
          return redirect('/home')
          ->with('flash', 'Your account is now confirmed! You may post to the forum');
-       
+
     }
 }

@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('avatar_path')->nullable();
-            $table->integer('confirmed')->default(1);   // no email; 
+            $table->integer('confirmed')->default(0);   // no email;
             $table->string('confirmation_token')->nullable();
             $table->string('personal_profile')->default('leave some words about yourself');
             $table->unsignedInteger('locked')->default(0); //0-unlocked

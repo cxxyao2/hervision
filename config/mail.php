@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mail.yahoo.com'),
+    'host' => env('MAIL_HOST', 'smtp.qq.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hervision2019@yahoo.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'jenniferyao1996@qq.com'),
         'name' => env('MAIL_FROM_NAME', 'hervision'),
     ],
 
@@ -70,7 +70,7 @@ return [
     | transport layer security protocol should provide great security.
     |
     */
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -83,9 +83,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME','hervision2019@yahoo.com'),
+    'username' => env('MAIL_USERNAME','jenniferyao1996@qq.com'),
 
-    'password' => env('MAIL_PASSWORD',''),
+    'password' => env('MAIL_PASSWORD','xmyhfnjgupkgfbfh'),
 
     /*
     |--------------------------------------------------------------------------
