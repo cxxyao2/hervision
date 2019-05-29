@@ -17,7 +17,6 @@ use App\Models\Thread;
 Route::get('/','ThreadsController@homepage');
 
 Route::get('/index', 'PostController@index');
-Route::post('/posts', 'PostController@store');
 
 Route::get('/chart', function() {
     return view('test');
@@ -27,9 +26,6 @@ Route::get('/chart', function() {
 
 
 Auth::routes();
-Route::resources([
-    'posts' => 'PostController'
-]);
 
 
 Route::get('/test1', 'TestArrayController@test1'); //序列化模型 & 集合
@@ -53,7 +49,7 @@ Route::post('/polls','PolljController@store')->name('polls.store');
 Route::get('/polls/{pollj}','PolljController@show')->name('polls.show');  //show poll results
 Route::get('/polls/{pollj}/edit','PolljController@edit')->name('polls.edit'); //vote
 Route::patch('/polls/{pollj}','PolljController@update')->name('polls.update'); //update poll
-Route::get('/posts/tagjs/{tagj}','TagjsController@index');
+
 Route::get('/home','HomeController@index')->name('home');
 //用户创建和登陆，确认信
 Route::get('/register','RegistrationController@create')->name('register');
