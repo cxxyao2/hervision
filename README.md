@@ -1,5 +1,5 @@
 # hervision
---A project based on laravel Framework, mainly for female users to record the world around them
+--A project based on laravel Framework
 - Tools and Languages:  PHP,CSS,Javascript, JQUERY, MySQL, Redis,Vue.js,Ajax
 - temporary website: http://forumjennifer2019.herokuapp.com/
 ---
